@@ -1,0 +1,59 @@
+
+<div>
+    <h2><span data-translate="vvvApp.product.detail.title">Product</span> {{vm.product.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="vvvApp.product.product">Product</span></dt>
+        <dd>
+            <span>{{vm.product.product}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.cost">Cost</span></dt>
+        <dd>
+            <span>{{vm.product.cost}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.price">Price</span></dt>
+        <dd>
+            <span>{{vm.product.price}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.sqty">Sqty</span></dt>
+        <dd>
+            <span>{{vm.product.sqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.mqty">Mqty</span></dt>
+        <dd>
+            <span>{{vm.product.mqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.lqty">Lqty</span></dt>
+        <dd>
+            <span>{{vm.product.lqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.xlqty">Xlqty</span></dt>
+        <dd>
+            <span>{{vm.product.xlqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.xxlqty">Xxlqty</span></dt>
+        <dd>
+            <span>{{vm.product.xxlqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.cur">Cur</span></dt>
+        <dd>
+            <span>{{vm.product.cur}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.img_path">Img Path</span></dt>
+        <dd>
+            <span>{{vm.product.img_path}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="product-detail.edit({id:vm.product.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

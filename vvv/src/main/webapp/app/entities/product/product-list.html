@@ -1,0 +1,49 @@
+<div>
+    <h2 data-translate="vvvApp.product.home.title">Products</h2>
+    <jhi-alert></jhi-alert>
+
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.fieldproduct.idproduct">Products number</span></th>
+                    <th><span data-translate="vvvApp.product.product">Product</span></th>
+                    <th><span data-translate="vvvApp.product.price">Price</span></th>
+                    <th><span data-translate="vvvApp.product.cur">Cur</span></th>
+                    <th><span data-translate="vvvApp.product.sqty">Sqty</span></th>
+                    <th><span data-translate="vvvApp.product.mqty">Mqty</span></th>
+                    <th><span data-translate="vvvApp.product.lqty">Lqty</span></th>
+                    <th><span data-translate="vvvApp.product.xlqty">Xlqty</span></th>
+                    <th><span data-translate="vvvApp.product.xxlqty">Xxlqty</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products track by product.id">
+                
+                    <td><a ui-sref="product-detail-list({id:product.id})">{{product.id}}</a></td>
+                    
+                    <td>{{product.product}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.cur}}</td>
+                    <td>{{product.sqty}}</td>
+                    <td>{{product.mqty}}</td>
+                    <td>{{product.lqty}}</td>
+                    <td>{{product.xlqty}}</td>
+                    <td>{{product.xxlqty}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="product-detail-list({id:product.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.view"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

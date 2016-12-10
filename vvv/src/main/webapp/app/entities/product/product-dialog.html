@@ -1,0 +1,86 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myProductLabel" data-translate="vvvApp.product.home.createOrEditLabel">Create or edit a Product</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.product.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.product.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.product" for="field_product">Product</label>
+            <input type="text" class="form-control" name="product" id="field_product"
+                    ng-model="vm.product.product"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.cost" for="field_cost">Cost</label>
+            <input type="number" class="form-control" name="cost" id="field_cost"
+                    ng-model="vm.product.cost"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.price" for="field_price">Price</label>
+            <input type="number" class="form-control" name="price" id="field_price"
+                    ng-model="vm.product.price"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.sqty" for="field_sqty">Sqty</label>
+            <input type="number" class="form-control" name="sqty" id="field_sqty"
+                    ng-model="vm.product.sqty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.mqty" for="field_mqty">Mqty</label>
+            <input type="number" class="form-control" name="mqty" id="field_mqty"
+                    ng-model="vm.product.mqty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.lqty" for="field_lqty">Lqty</label>
+            <input type="number" class="form-control" name="lqty" id="field_lqty"
+                    ng-model="vm.product.lqty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.xlqty" for="field_xlqty">Xlqty</label>
+            <input type="number" class="form-control" name="xlqty" id="field_xlqty"
+                    ng-model="vm.product.xlqty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.xxlqty" for="field_xxlqty">Xxlqty</label>
+            <input type="number" class="form-control" name="xxlqty" id="field_xxlqty"
+                    ng-model="vm.product.xxlqty"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.cur" for="field_cur">Cur</label>
+            <input type="text" class="form-control" name="cur" id="field_cur"
+                    ng-model="vm.product.cur"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="vvvApp.product.img_path" for="field_img_path">Img Path</label>
+            <input type="text" class="form-control" name="img_path" id="field_img_path"
+                    ng-model="vm.product.img_path"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

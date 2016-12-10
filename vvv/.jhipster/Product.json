@@ -1,0 +1,52 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "product",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cost",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "lqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "xlqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "xxlqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cur",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "img_path",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161114181657",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "product",
+    "pagination": "no"
+}

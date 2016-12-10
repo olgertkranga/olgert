@@ -1,0 +1,64 @@
+
+<div>
+
+    <!--  <a href="product-buy.html">Buy this Jacket</a> -->
+
+    <h2><span data-translate="vvvApp.product.detail.title">Product</span> {{vm.product.id}}</h2>
+    
+    <h2>Please choose</h2>
+    
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="vvvApp.product.product">Product</span></dt>
+        
+        <dd>
+            <span>{{vm.product.product}}</span>
+        </dd>
+        
+        <dt><span data-translate="vvvApp.product.price">Price</span></dt>
+        <dd>
+            <span>{{vm.product.price}}</span>
+        </dd>
+        
+        <dt><span data-translate="vvvApp.product.cur">currency</span></dt>
+        
+        <dd>
+            <span>{{vm.product.cur}}</span>
+        </dd>
+        
+        <dt><span data-translate="vvvApp.product.sizes">sizes</span></dt>
+        
+        <dd>
+            <span>
+            
+				<select name="cars">
+  					<option value="S">S</option>
+  					<option value="M">M</option>
+  					<option value="L">L</option>
+  					<option value="XL">XL</option>
+  					<option value="XXL">XXL</option>
+				</select>            
+            
+            </span>
+        </dd>           
+        
+    </dl>   
+     
+    <div class = "product-list-image-buy">
+      	
+		<img src="app/entities/product/img/{{vm.product.img_path}}">    	
+        
+    </div>
+ 
+    <button type="submit"
+            
+		ui-sref="product-detail-list({id:{{vm.product.id}}})"            
+            
+        class="btn btn-info">
+        
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    
+    </button>
+    
+</div>

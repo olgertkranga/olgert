@@ -1,0 +1,61 @@
+
+<div>
+
+	<a ui-sref="product-buy({id:vm.product.id})">{{vm.product.id}}</a>
+
+    <h2><span data-translate="vvvApp.product.detail.title">Product</span> {{vm.product.id}}</h2>
+    
+    <h2>This is detail information about this product 2</h2>
+    
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="vvvApp.product.product">Product</span></dt>
+        <dd>
+            <span>{{vm.product.product}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.price">Price</span></dt>
+        <dd>
+            <span>{{vm.product.price}}</span>
+        </dd>
+        
+        <dt><span data-translate="vvvApp.product.cur">Cur</span></dt>
+        <dd>
+            <span>{{vm.product.cur}}</span>
+        </dd>  
+                
+        <dt><span data-translate="vvvApp.product.sqty">Sqty</span></dt>
+        <dd>
+            <span>{{vm.product.sqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.mqty">Mqty</span></dt>
+        <dd>
+            <span>{{vm.product.mqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.lqty">Lqty</span></dt>
+        <dd>
+            <span>{{vm.product.lqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.xlqty">Xlqty</span></dt>
+        <dd>
+            <span>{{vm.product.xlqty}}</span>
+        </dd>
+        <dt><span data-translate="vvvApp.product.xxlqty">Xxlqty</span></dt>
+        <dd>
+            <span>{{vm.product.xxlqty}}</span>
+        </dd>
+     </dl>
+     
+    <div class = "product-list-image">
+      	
+		<img src="app/entities/product/img/{{vm.product.img_path}}">    	
+        
+    </div>
+ 
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+    
+</div>

@@ -1,0 +1,31 @@
+{
+    "vvvApp": {
+        "product" : {
+            "home": {
+                "title": "Products",
+                "createLabel": "Создать новый Product",
+                "createOrEditLabel": "Создать или отредактировать Product",
+                "search": "Найти Product"
+            },
+            "created": "Новый Product создан с идентификатором {{ param }}",
+            "updated": "Product обновлен с идентификатором {{ param }}",
+            "deleted": "Product удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Product {{ id }}?"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "product": "Product",
+            "cost": "Cost",
+            "price": "Price",
+            "sqty": "Sqty",
+            "mqty": "Mqty",
+            "lqty": "Lqty",
+            "xlqty": "Xlqty",
+            "xxlqty": "Xxlqty",
+            "cur": "Cur",
+            "img_path": "Img Path"
+        }
+    }
+}
